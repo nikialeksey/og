@@ -8,6 +8,46 @@
     <artifactId>og</artifactId>
     <version>0.0.1</version>
 
+    <packaging>jar</packaging>
+    <name>og</name>
+    <description>The Open Graph Java implementation</description>
+    <url>https://github.com/nikialeksey/og</url>
+    <inceptionYear>2018</inceptionYear>
+    <organization>
+        <name>Og</name>
+        <url>https://github.com/nikialeksey/og</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://github.com/nikialeksey/og/blob/master/LICENSE.txt</url>
+            <distribution>site</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>1</id>
+            <name>Alexey Nikitin</name>
+            <email>nikialeksey@gmail.com</email>
+            <organization>nikialeksey.com</organization>
+            <organizationUrl>http://www.nikialeksey.com</organizationUrl>
+            <roles>
+                <role>Architect</role>
+                <role>Developer</role>
+            </roles>
+            <timezone>+7</timezone>
+        </developer>
+    </developers>
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/nikialeksey/og/issues</url>
+    </issueManagement>
+    <scm>
+        <connection>scm:git:git@github.com:nikialeksey/og.git</connection>
+        <developerConnection>scm:git:git@github.com:nikialeksey/og.git</developerConnection>
+        <url>https://github.com/nikialeksey/og</url>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>org.cactoos</groupId>
@@ -30,6 +70,25 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.9</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/nikialeksey/og.svg?branch=master)](https://travis-ci.org/nikialeksey/og)
+
+
 # The Open Graph Java implementation
 [The Open Graph](http://ogp.me/) is a protocol for creating object in social 
 graph from a web page.
