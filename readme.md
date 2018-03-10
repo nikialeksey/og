@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/nikialeksey/og.svg?branch=master)](https://travis-ci.org/nikialeksey/og)
-
+[![codecov](https://codecov.io/gh/nikialeksey/og/branch/master/graph/badge.svg)](https://codecov.io/gh/nikialeksey/og)
 
 # The Open Graph Java implementation
 [The Open Graph](http://ogp.me/) is a protocol for creating object in social 
