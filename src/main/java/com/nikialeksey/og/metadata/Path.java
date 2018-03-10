@@ -26,4 +26,5 @@ package com.nikialeksey.og.metadata;
 import com.nikialeksey.og.types.Ogt;
 
 public interface Path extends Ogt {
+    Path andThen(final String name);
 }

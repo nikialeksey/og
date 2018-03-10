@@ -50,23 +50,23 @@ public final class OgProfile implements Profile {
 
     @Override
     public String html(final Path prefix) {
-        final OgtPath profile = new OgtPath(prefix, "profile");
+        final Path profile = prefix.andThen("profile");
         return new OgtMetaBlock()
             .append(
                 new OgtMeta(
-                    new OgtProperty(new OgtPath(profile, "first_name")),
+                    new OgtProperty(profile.andThen("first_name")),
                     new OgtContent(first)
                 )
             )
             .append(
                 new OgtMeta(
-                    new OgtProperty(new OgtPath(profile, "last_name")),
+                    new OgtProperty(profile.andThen("last_name")),
                     new OgtContent(last)
                 )
             )
             .append(
                 new OgtMeta(
-                    new OgtProperty(new OgtPath(profile, "username")),
+                    new OgtProperty(profile.andThen("username")),
                     new OgtContent(username)
                 )
             )

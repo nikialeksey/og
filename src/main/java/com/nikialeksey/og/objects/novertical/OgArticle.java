@@ -60,21 +60,21 @@ public final class OgArticle implements Article {
 
     @Override
     public String html(final Path prefix) {
-        final OgtPath article = new OgtPath(prefix, "article");
+        final Path article = prefix.andThen("article");
         final OgtMetaBlock metas = new OgtMetaBlock();
         metas.append(
             new OgtMeta(
-                new OgtProperty(new OgtPath(article, "published_time")),
+                new OgtProperty(article.andThen("published_time")),
                 new OgtContent(published)
             )
         );
         for (final Profile author : authors) {
-            metas.append(author.html(new OgtPath(article, "author")));
+            metas.append(author.html(article.andThen("author")));
         }
         for (final String tag : tags) {
             metas.append(
                 new OgtMeta(
-                    new OgtProperty(new OgtPath(article, "tag")),
+                    new OgtProperty(article.andThen("tag")),
                     new OgtContent(tag)
                 )
             );

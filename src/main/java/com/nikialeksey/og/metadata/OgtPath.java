@@ -26,14 +26,11 @@ package com.nikialeksey.og.metadata;
 import java.util.Collection;
 import org.cactoos.collection.CollectionOf;
 import org.cactoos.collection.Filtered;
+import org.cactoos.collection.Joined;
 
 public final class OgtPath implements Path {
 
     private final Collection<String> names;
-
-    public OgtPath(final Path prefix, final String name) {
-        this(prefix.value(), name);
-    }
 
     public OgtPath(final String... names) {
         this(new CollectionOf<>(names));
@@ -55,5 +52,10 @@ public final class OgtPath implements Path {
             builder.deleteCharAt(builder.length() - 1);
         }
         return builder.toString();
+    }
+
+    @Override
+    public Path andThen(final String name) {
+        return new OgtPath(new Joined<>(names, new CollectionOf<>(name)));
     }
 }
