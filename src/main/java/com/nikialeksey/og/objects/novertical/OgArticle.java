@@ -55,7 +55,7 @@ public final class OgArticle implements Article {
 
     @Override
     public String html() {
-        return html(new OgtPath("og"));
+        return html(new OgtPath());
     }
 
     @Override

@@ -17,12 +17,12 @@ new OgArticle(
 ```
 will produce:
 ```xml
-<meta property="og:article:published_time" content="2017-03-10T15:12+07:00" />
-<meta property="og:article:author:profile:first_name" content="Alexey" />
-<meta property="og:article:author:profile:last_name" content="Nikitin" />
-<meta property="og:article:author:profile:username" content="nikialeksey" />
-<meta property="og:article:tag" content="android" />
-<meta property="og:article:tag" content="programming" />
+<meta property="article:published_time" content="2017-03-10T15:12+07:00" />
+<meta property="article:author:profile:first_name" content="Alexey" />
+<meta property="article:author:profile:last_name" content="Nikitin" />
+<meta property="article:author:profile:username" content="nikialeksey" />
+<meta property="article:tag" content="android" />
+<meta property="article:tag" content="programming" />
 ```
 
 # Parsing
