@@ -56,6 +56,6 @@ public final class OgtPath implements Path {
 
     @Override
     public Path andThen(final String name) {
-        return new OgtPath(new Joined<>(names, new CollectionOf<>(name)));
+        return new OgtPath(new Joined<String>(names, new CollectionOf<>(name)));
     }
 }
