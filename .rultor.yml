@@ -3,7 +3,7 @@ decrypt:
   pubring.gpg: "repo/pub.gpg.asc"
   secring.gpg: "repo/sec.gpg.asc"
 release:
-  script: |
+  script: |-
     mvn versions:set "-DnewVersion=${tag}"
     git commit -am "${tag}"
-    mvn clean deploy -Pjcabi --settings /home/r/settings.xml
+    mvn clean deploy -Psonatype --settings /home/r/settings.xml
