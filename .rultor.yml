@@ -1,3 +1,6 @@
+env:
+  MAVEN_OPTS: -Xmx1g
+  JAVA_OPTS: -Xmx1g
 decrypt:
   settings.xml: "repo/settings.xml.asc"
   pubring.gpg: "repo/pubring.gpg.asc"
