@@ -35,7 +35,7 @@ The MIT License (MIT)
   </properties>
   <groupId>com.nikialeksey</groupId>
   <artifactId>og</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2</version>
   <packaging>jar</packaging>
   <name>og</name>
   <description>The Open Graph Java implementation</description>
